@@ -6,7 +6,6 @@ class MaximumAscendingSubarraySum1800 {
     public int maxAscendingSum(int[] nums) {
         ArrayList<Integer> max = new ArrayList<>();
         
-        int maxSum = 0;
         int sequence = 0;
         
         for(int i = 0; i < nums.length; i++) {
@@ -34,7 +33,6 @@ class MaximumAscendingSubarraySum1800 {
             }
         }
 
-        
         return maxSum;
     }
 
