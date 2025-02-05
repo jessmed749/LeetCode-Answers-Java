@@ -1,7 +1,7 @@
 
-class Solution {
+class MaximumAscendingSubarraySum1800 {
     public int maxAscendingSum(int[] nums) {
-
+        int maxSum = 0;
         int sequence = 0;
         
         for(int i = 0; i < nums.length-1; i++) {
@@ -16,7 +16,7 @@ class Solution {
             }
         }
 
-        return sequence;
+        return maxSum;
     }
 
     // public int compare(int num){
@@ -24,7 +24,7 @@ class Solution {
     // }
 
     public static void testCases() {
-        Solution solution = new Solution();
+        MaximumAscendingSubarraySum1800 solution = new MaximumAscendingSubarraySum1800();
 
         int[] test1 = {10, 20, 30, 5, 10, 50};
         int[] test2 = {10, 20, 30, 40, 50};
@@ -35,7 +35,6 @@ class Solution {
         System.out.println("Test 3 (Expected 33): " + solution.maxAscendingSum(test3));
     }
 
-    // ✅ Main method to run test cases
     public static void main(String[] args) {
         testCases();
     }

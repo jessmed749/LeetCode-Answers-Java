@@ -1,5 +1,5 @@
 
-class Solution {
+class RomanToInt13 {
     public int romanToInt(String s) {
         int total = 0;
         int result_current = 0;
@@ -40,7 +40,7 @@ class Solution {
 
     // Test cases to make debugging ez
     public static void testCases() {
-        Solution solution = new Solution();
+        RomanToInt13 solution = new RomanToInt13();
 
         System.out.println("Test MCMXCIV: " + (solution.romanToInt("MCMXCIV") == 1994));
         System.out.println("Test III: " + (solution.romanToInt("III") == 3));
